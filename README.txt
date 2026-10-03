@@ -1,1 +1,0 @@
-Versão V13: fundo da tela de votação substituído por novas artes desktop e mobile fornecidas pela usuária, com escurecimento via overlay e sem artefatos dos quadrados antigos.
