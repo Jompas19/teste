@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="theme-color" content="#170403" />
+  <title>OituAwards</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main class="app-shell">
+    <section id="homeScreen" class="screen screen-home is-active" aria-label="Página inicial do OituAwards">
+      <header class="topbar home-topbar">
+        <a href="#" class="brand" id="homeLogo" aria-label="OituAwards - Início">OituAwards</a>
+        <nav class="main-nav" aria-label="Navegação principal">
+          <button class="nav-link is-active" type="button" data-home>Início</button>
+          <button class="nav-link" type="button" id="categoriesButton">Categorias</button>
+        </nav>
+      </header>
+
+      <div class="home-content">
+        <h1 class="hero-title">OituAwards</h1>
+        <div class="ornament-line" aria-hidden="true"><span></span><i>◇</i><span></span></div>
+        <p class="hero-kicker">CELEBRANDO O QUE NOS INSPIRA</p>
+        <p class="hero-copy">Reconheça os grandes destaques do ano e ajude a<br class="desktop-only"> valorizar quem faz a diferença.</p>
+        <button id="startVotingButton" class="start-button" type="button">
+          <span>Iniciar votação</span><span class="button-arrow" aria-hidden="true">→</span>
+        </button>
+      </div>
+    </section>
+
+    <section id="voteScreen" class="screen screen-vote" aria-label="Votação do OituAwards" aria-hidden="true">
+      <header class="vote-topbar">
+        <a href="#" class="brand brand-vote" data-home aria-label="OituAwards - Início">OituAwards</a>
+        <div class="award-label" aria-label="Melhores do ano"><span>MELHORES DO ANO</span><b aria-hidden="true">✦</b><i aria-hidden="true"></i></div>
+      </header>
+
+      <div class="vote-stage">
+        <div class="progress-wrap" aria-label="Progresso da votação">
+          <div id="progressText" class="progress-text">1 / 12</div>
+          <div class="progress-track"><span id="progressBar"></span></div>
+        </div>
+
+        <div class="category-heading">
+          <p class="category-kicker">CATEGORIA</p>
+          <h1 id="categoryTitle">Melhor Criador de Conteúdo</h1>
+          <div class="mini-ornament" aria-hidden="true"><span></span><i>✦</i><span></span></div>
+          <p id="categoryDescription">Vote em quem mais se destacou ao longo do ano<br class="desktop-only"> com conteúdo relevante, criativo e autêntico.</p>
+        </div>
+
+        <div id="nomineeGrid" class="nominee-grid" role="radiogroup" aria-label="Indicados da categoria"></div>
+
+        <div class="vote-navigation">
+          <button id="previousButton" class="stage-button" type="button"><span aria-hidden="true">←</span> ANTERIOR</button>
+          <button id="nextButton" class="stage-button" type="button">PRÓXIMA <span aria-hidden="true">→</span></button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div id="identityModal" class="modal" aria-hidden="true">
+    <div class="modal-backdrop" data-close-modal></div>
+    <section class="modal-card" role="dialog" aria-modal="true" aria-labelledby="identityTitle">
+      <span class="sparkle sparkle-1" aria-hidden="true">✦</span>
+      <span class="sparkle sparkle-2" aria-hidden="true">✧</span>
+      <span class="sparkle sparkle-3" aria-hidden="true">✦</span>
+      <span class="modal-kicker">OITUAWARDS</span>
+      <h1 id="identityTitle">Quem é você?</h1>
+      <p class="modal-copy">Selecione seu nome para continuar para a votação.</p>
+
+      <div class="custom-select" id="voterSelect">
+        <span class="select-label" id="voterLabel">Nome</span>
+        <button id="voterSelectButton" class="select-trigger" type="button" aria-haspopup="listbox" aria-expanded="false" aria-labelledby="voterLabel voterSelectText">
+          <span id="voterSelectText">Selecione uma opção</span>
+          <span class="select-chevron" aria-hidden="true">⌄</span>
+        </button>
+        <div class="select-popover" id="voterPopover">
+          <div class="select-options" id="voterOptions" role="listbox" aria-label="Selecione seu nome"></div>
+        </div>
+      </div>
+
+      <div class="modal-actions">
+        <button id="cancelIdentity" class="button-secondary" type="button">Cancelar</button>
+        <button id="confirmIdentity" class="button-primary" type="button" disabled>Confirmar</button>
+      </div>
+    </section>
+  </div>
+
+  <div id="pageTransition" class="page-transition" aria-hidden="true">
+    <div class="transition-panel transition-left"></div>
+    <div class="transition-panel transition-right"></div>
+    <div class="transition-mark"><span>OituAwards</span><i>✦</i></div>
+  </div>
+
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>

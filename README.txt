@@ -1,0 +1,1 @@
+Versão V11: layout mobile reformulado com carrossel horizontal de indicados, swipe + scroll snap, um card em destaque por vez e centralização automática ao selecionar. Desktop permanece inalterado.
