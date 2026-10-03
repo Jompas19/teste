@@ -1,1 +1,0 @@
-Versão V12: novos fundos limpos. Desktop usa a nova arte horizontal; mobile usa a arte vertical dedicada. A tela de votação não usa mais a antiga imagem com cards/textos embutidos, evitando duplicações visuais. Mantidos carrossel mobile, animações e interações da V11.
