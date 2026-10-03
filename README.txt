@@ -1,0 +1,1 @@
+Versão V14: no mobile, cabeçalho da votação permanece fixo ao rolar e a arte/gradiente de fundo ficam fixos na viewport, eliminando a emenda visível do escurecimento.
