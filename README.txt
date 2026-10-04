@@ -1,1 +1,0 @@
-Versão V15: refinado o visual do card selecionado no mobile, com brilho mais suave e integrado ao layout, reduzindo o aspecto de bloco quadrado luminoso.
