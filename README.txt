@@ -1,0 +1,1 @@
+Versão V30: adicionada a animação do Henrique Lecomte Ferreira com o mesmo comportamento dos demais personagens: entrada pela direita, mesmo tamanho, parada à esquerda da modal e saída correndo para a esquerda ao trocar de nome.
